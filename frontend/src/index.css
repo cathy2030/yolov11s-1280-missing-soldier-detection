@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  html, body { @apply overflow-x-hidden; max-width: 100%; }
   html { -webkit-font-smoothing: antialiased; }
   body { @apply bg-stone text-ink font-body; }
   .num { font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }

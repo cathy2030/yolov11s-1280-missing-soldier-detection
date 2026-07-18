@@ -76,7 +76,7 @@ export default function Sessions() {
         <button className="btn-brass">Start muster</button>
       </form>
 
-      <div className="card overflow-hidden">
+      <div className="card overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
             <tr className="text-left text-muted eyebrow border-b border-line/20">

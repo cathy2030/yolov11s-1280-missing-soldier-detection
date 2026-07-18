@@ -194,7 +194,7 @@ export default function SessionDetail() {
             <h2 className="eyebrow text-muted mb-3 flex items-center">
               Live camera <HelpTip text="Uses this device's webcam. A frame is captured and counted every few seconds — point it at the formation to monitor live." />
             </h2>
-            <div className="card p-4">
+            <div className="card p-4 min-w-0">
               <div className="relative rounded-md overflow-hidden bg-command aspect-video mb-3">
                 <video ref={videoRef} className="w-full h-full object-cover" muted playsInline />
                 {!camOn && (
@@ -218,7 +218,7 @@ export default function SessionDetail() {
             <h2 className="eyebrow text-muted mb-3 flex items-center">
               Analyze a photo or video <HelpTip text="Upload a parade photo for an instant count, or a video clip that gets sampled frame-by-frame into the log." />
             </h2>
-            <div className="card p-4">
+            <div className="card p-4 min-w-0">
               <input ref={fileRef} type="file" accept="image/*,video/*"
                 onChange={(e) => { setFile(e.target.files?.[0] || null); setUploadMsg(""); }}
                 className="block w-full text-sm text-muted file:mr-3 file:py-2 file:px-3 file:rounded-md file:border-0 file:bg-command file:text-white file:font-display file:uppercase file:tracking-wider file:text-xs" />
